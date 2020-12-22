@@ -1,20 +1,40 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { Dimensions, StyleSheet, Text, Image, View, SafeAreaView, Alert, Button } from 'react-native';
+import { View, StyleSheet } from 'react-native';
+import { useDimensions, useDeviceOrientation } from '@react-native-community/hooks';
 
 export default function App() {
-  const handlePress = () => console.log("Element pressed")
-  console.log(Dimensions.get("screen"))
 
   return (
-    <SafeAreaView style={styles.container}>
-      <View style={{
-        backgroundColor: 'dodgerBlue',
-        width: '50%',
-        height: 70,
-      }}></View>
-      <Text>Text under image</Text>
-    </SafeAreaView>
+    <View
+      style={{
+        backgroundColor: "#fff",
+        flex: 1,
+        flexDirection: "row"
+      }}
+    >
+      <View
+        style={{
+          backgroundColor: "dodgerblue",
+          width: 100,
+          height: 100
+        }}
+      />
+      <View
+        style={{
+          backgroundColor: "gold",
+          width: 100,
+          height: 100
+        }}
+      />
+      <View
+        style={{
+          backgroundColor: "tomato",
+          width: 100,
+          height: 100
+        }}
+      />
+    </View>
   );
 }
 
