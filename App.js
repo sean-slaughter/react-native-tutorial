@@ -1,13 +1,17 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { View, StyleSheet } from 'react-native';
+import { View, StyleSheet, Dimensions } from 'react-native';
 import { useDimensions, useDeviceOrientation } from '@react-native-community/hooks';
 
 export default function App() {
 
+  console.log(useDeviceOrientation())
+
   return (
     <View
       style={{
+        justifyContent: "center",
+        alignItems: "center",
         backgroundColor: "#fff",
         flex: 1,
         flexDirection: "row"
@@ -17,14 +21,14 @@ export default function App() {
         style={{
           backgroundColor: "dodgerblue",
           width: 100,
-          height: 100
+          height: 300
         }}
       />
       <View
         style={{
           backgroundColor: "gold",
           width: 100,
-          height: 100
+          height: 200
         }}
       />
       <View
