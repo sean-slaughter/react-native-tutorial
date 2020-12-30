@@ -6,7 +6,6 @@ import {
   useDeviceOrientation,
 } from "@react-native-community/hooks";
 import ViewImageScreen from "./app/screens/ViewImageScreen";
-import AppText from "./app/components/AppText/AppText";
 import {MaterialCommunityIcons} from '@expo/vector-icons'
 import Button from "./app/components/Button/Button"
 export default function App() {
