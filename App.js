@@ -7,10 +7,12 @@ import {
 } from "@react-native-community/hooks";
 import ViewImageScreen from "./app/screens/ViewImageScreen";
 import {MaterialCommunityIcons} from '@expo/vector-icons'
-import Button from "./app/components/Button/Button"
+import AppButton from "./app/components/AppButton"
+import WelcomeScreen from "./app/screens/WelcomeScreen";
+
 export default function App() {
   return (
-    <Button>LOGIN</Button>
+      <WelcomeScreen/>
   );
 }
 
@@ -18,10 +20,8 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "white",
     alignItems: "center",
     justifyContent: "center",
-    color: "white",
   },
 
   logo: {
