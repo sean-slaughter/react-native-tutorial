@@ -14,7 +14,7 @@ import Card from "./app/components/Card";
 export default function App() {
   return (
       <View style={{
-        backgroundColor: '#f8f4d4',
+        backgroundColor: '#f8f4f4',
         padding: 20,
         paddingTop: 100,
       }}>
