@@ -9,23 +9,25 @@ import ViewImageScreen from "./app/screens/ViewImageScreen";
 import {MaterialCommunityIcons} from '@expo/vector-icons'
 import AppButton from "./app/components/AppButton"
 import WelcomeScreen from "./app/screens/WelcomeScreen";
+import Card from "./app/components/Card";
 
 export default function App() {
   return (
-      <WelcomeScreen/>
+      <View style={{
+        backgroundColor: '#f8f4d4',
+        padding: 20,
+        paddingTop: 100,
+      }}>
+        <Card
+          title="Red jacket for sale"
+          subTitle="$100"
+          image={require("./app/assets/jacket.jpg")}
+        >
+
+        </Card>
+      </View>
   );
 }
 
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    alignItems: "center",
-    justifyContent: "center",
-  },
 
-  logo: {
-    width: 300,
-    height: 200,
-  },
-});
